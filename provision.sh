@@ -7,6 +7,7 @@ sudo apt-get install -qq -y python-software-properties debconf-utils
 sudo add-apt-repository -y ppa:webupd8team/java
 sudo apt-get -qq update
 echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | sudo debconf-set-selections
+# internal curl chatter on the oracle-java8-installer is difficult to remove - sorry
 sudo apt-get install -qq -y oracle-java8-installer
 #git
 sudo apt-get install -qq -y git
